@@ -9,6 +9,8 @@ import sequencia.FullHouse
 import sequencia.MaiorCarta
 import sequencia.Par
 import sequencia.Quadra
+import sequencia.RoyalStraightFlush
+import sequencia.StraightFlush
 import sequencia.Trinca
 
 import static entidade.Card.*
@@ -87,10 +89,12 @@ class PokerNegocio {
 	}
 
 	private Boolean verificarRoyalStraightFlush(PokerHand hand){
-		Boolean.FALSE
+		RoyalStraightFlush sf = new RoyalStraightFlush()
+		sf.isSequencia(hand)
 	}
 	private Boolean verificarStraightFlush(PokerHand hand){
-		Boolean.FALSE
+		StraightFlush sf = new StraightFlush()
+		sf.isSequencia(hand)
 	}
 	private Boolean verificarQuadra(PokerHand hand){
 		Quadra q = new Quadra()
@@ -105,7 +109,7 @@ class PokerNegocio {
 		f.isSequencia (hand)
 	}
 	private Boolean verificarSequency(PokerHand hand){
-		Card.isSequency(hand)
+		PokerHand.isSequency(hand)
 	}
 	private Boolean verificarTrinca(PokerHand hand){
 		Trinca t = new Trinca()

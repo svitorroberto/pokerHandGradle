@@ -12,12 +12,12 @@ import static entidade.Card.sameNumber
 class Quadra implements Sequencia {
 	@Override
 	Result comparar(PokerHand hand1, PokerHand hand2) {
-		return null
+		//Hand possui 4 cartas (quadra)
+		return Card.compare(PokerHand.retornaMaiorCarta(hand1), PokerHand.retornaMaiorCarta(hand2))
 	}
 
 	@Override
 	Boolean isSequencia(PokerHand hand) {
-		Card.isHiger(hand.cards.get(0), hand.cards.get(1))
 		HashMap cartasRepetidas = sameNumber(hand)
 		if (cartasRepetidas.containsValue(4)) {
 			println(hand.toString())

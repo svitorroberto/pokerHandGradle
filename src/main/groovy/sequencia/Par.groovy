@@ -1,5 +1,6 @@
 package sequencia
 
+import entidade.Card
 import entidade.PokerHand
 import entidade.Result
 
@@ -11,7 +12,8 @@ import static entidade.Card.sameNumber
 class Par implements Sequencia {
 	@Override
 	Result comparar(PokerHand hand1, PokerHand hand2) {
-		return null
+		//Hand possui 2 cartas (par)
+		return Card.compare(PokerHand.retornaMaiorCarta(hand1), PokerHand.retornaMaiorCarta(hand2))
 	}
 
 	@Override

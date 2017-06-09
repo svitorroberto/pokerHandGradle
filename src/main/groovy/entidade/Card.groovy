@@ -24,7 +24,7 @@ class Card {
 			return contagem
 	}
 
-	static Boolean sameSuit(PokerHand hand){
+	static HashMap sameSuit(PokerHand hand){
 		Map<CardEnum, Integer> contagem = new HashMap<CardEnum, Integer>();
 		for(Card card : hand.cards){
 			if(!contagem.containsKey(card.suit)){
@@ -32,7 +32,7 @@ class Card {
 			}
 			contagem.put(card.suit,contagem.get(card.suit)+1)
 		}
-		return contagem
+		return contagem.sort()
 	}
 
 	static Result compare(Card card1, Card card2){

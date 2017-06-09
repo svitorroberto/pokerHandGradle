@@ -1,8 +1,11 @@
 package sequencia
 
+import entidade.Card
 import entidade.CardEnum
 import entidade.PokerHand
 import entidade.Result
+
+import static entidade.CardEnum.A
 
 /**
  * Created by vitormiranda on 08/06/17.
@@ -10,12 +13,19 @@ import entidade.Result
 class RoyalStraightFlush implements Sequencia {
 	@Override
 	Result comparar(PokerHand hand1, PokerHand hand2) {
-		return null
+		Result.DRAW
 	}
 
 	@Override
 	Boolean isSequencia(PokerHand hand) {
-		CardEnum.MAX_VALUE
+		Flush f = new Flush()
+		if (PokerHand.isSequency(hand) && f.isSequencia(hand) && (PokerHand.retornaMaiorCarta(hand).number.equals(A))) {
+			println("Royal Straight Flush")
+			Boolean.TRUE
+		} else {
+			Boolean.FALSE
+		}
+
 	}
 
 }

@@ -20,6 +20,7 @@ class HandsTest extends Specification{
 
 		where:
 		hand             | counterHand      || result
+		"9C TC JC QC KC" | "9C 9H 5C 5H AC" || Result.WIN;
 		"TC TH 5C 5H KH" | "9C 9H 5C 5H AC" || Result.WIN;
 		"TS TD KC JC 7C" | "JS JC AS KC TD" || Result.LOSS;
 		"7H 7C QC JS TS" | "7D 7C JS TS 6D" || Result.WIN;
@@ -46,6 +47,7 @@ class HandsTest extends Specification{
 		"7C 8S 9H TH JH" | "TS TH TD JH JD" || Result.LOSS;
 		"7C 8S 9H TH JH" | "JH JD TH TC 4C" || Result.WIN;
 		"TS TH TD JH JD" | "JH JD TH TC 4C" || Result.WIN;
+
 	}
 
 }

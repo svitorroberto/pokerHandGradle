@@ -4,6 +4,7 @@ import entidade.PokerHand
 import entidade.Result
 
 import static entidade.Card.sameNumber
+import static entidade.Card.sameSuit
 
 /**
  * Created by vitormiranda on 08/06/17.
@@ -16,7 +17,7 @@ class Flush implements Sequencia {
 
 	@Override
 	Boolean isSequencia(PokerHand hand) {
-		HashMap cartasRepetidas = sameNumber(hand)
+		HashMap cartasRepetidas = sameSuit(hand)
 		if (cartasRepetidas.containsValue(5)) {
 			println(hand.toString())
 			println("Flush")
