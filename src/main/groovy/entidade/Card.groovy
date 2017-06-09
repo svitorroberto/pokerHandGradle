@@ -1,16 +1,16 @@
 package entidade
 
+
 /**
  * Created by vitormiranda on 06/06/17.
  */
 class Card {
-	private CardEnum number
-	private SuitEnum suit
+	CardEnum number
+	SuitEnum suit
 
 	Card(String carta){
 		number = CardEnum.findByCode(carta[0])
 		suit = carta[1]
-		println("Carta: "+number+" "+suit)
 	}
 
 	static HashMap sameNumber(PokerHand hand){
@@ -34,4 +34,12 @@ class Card {
 		}
 		return contagem
 	}
+
+	static Result compare(Card card1, Card card2){
+		def temp = card1.number.compareTo(card2.number)
+		if(temp<0){Result.LOSS}
+		if(temp==0){Result.DRAW}
+		if(temp>0){Result.WIN}
+	}
+
 }

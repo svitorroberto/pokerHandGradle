@@ -3,6 +3,13 @@ package negocio
 import entidade.Card
 import entidade.PokerHand
 import entidade.Result
+import sequencia.DoisPares
+import sequencia.Flush
+import sequencia.FullHouse
+import sequencia.MaiorCarta
+import sequencia.Par
+import sequencia.Quadra
+import sequencia.Trinca
 
 import static entidade.Card.*
 
@@ -18,34 +25,44 @@ class PokerNegocio {
 	Result verificarSequencias (PokerHand hand1, PokerHand hand2){
 //		(compararPorSequencia(temSequencia1, temSequencia2) != Result.DRAW) ? return Result.DRAW : return Result.DRAW
 		resultado = compararPorSequencia(verificarRoyalStraightFlush(hand1), verificarRoyalStraightFlush(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarStraightFlush
 		resultado = compararPorSequencia(verificarStraightFlush(hand1), verificarStraightFlush(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarQuadra
 		resultado = compararPorSequencia(verificarQuadra(hand1), verificarQuadra(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarFullHouse
 		resultado = compararPorSequencia(verificarFullHouse(hand1), verificarFullHouse(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarFlush
 		resultado = compararPorSequencia(verificarFlush(hand1), verificarFlush(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarSequency
 		resultado = compararPorSequencia(verificarSequency(hand1), verificarSequency(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarTrinca
 		resultado = compararPorSequencia(verificarTrinca(hand1), verificarTrinca(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarDoisPares
 		resultado = compararPorSequencia(verificarDoisPares(hand1), verificarDoisPares(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarPar
 		resultado = compararPorSequencia(verificarPar(hand1), verificarPar(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 		//verificarMaiorCarta
 		resultado = compararPorSequencia(verificarMaiorCarta(hand1), verificarMaiorCarta(hand2))
-		if(resultado != Result.DRAW){resultado}
+		if(resultado == Result.WIN || resultado == Result.LOSS){resultado}
+//		else if (resultado == Result.DRAW){desempatePorSequencia(hand1, hand2)}
 
 	}
 
@@ -60,9 +77,13 @@ class PokerNegocio {
 			if (temSequencia2) {
 				return Result.LOSS
 			} else {
-				return Result.DRAW
+				return Result.NONE
 			}
 		}
+	}
+
+	private desempatePorSequencia(PokerHand hand1, PokerHand hand2) {
+
 	}
 
 	private Boolean verificarRoyalStraightFlush(PokerHand hand){
@@ -72,49 +93,35 @@ class PokerNegocio {
 		Boolean.FALSE
 	}
 	private Boolean verificarQuadra(PokerHand hand){
-		HashMap cartasRepetidas = sameNumber(hand)
-		if(cartasRepetidas.containsValue(4)){
-			println("Quadra")
-			Boolean.TRUE
-		}
-		else{Boolean.FALSE}
+		Quadra q = new Quadra()
+		q.isSequencia (hand)
 	}
 	private Boolean verificarFullHouse(PokerHand hand){
-		Boolean.FALSE
+		FullHouse fh = new FullHouse()
+		fh.isSequencia (hand)
 	}
 	private Boolean verificarFlush(PokerHand hand){
-		HashMap cartasRepetidas = sameNumber(hand)
-		if(cartasRepetidas.containsValue(5)){
-			println("Flush")
-			Boolean.TRUE
-		}
-		else{Boolean.FALSE}
+		Flush f = new Flush()
+		f.isSequencia (hand)
 	}
 	private Boolean verificarSequency(PokerHand hand){
-		Boolean.FALSE
+		Card.isSequency(hand)
 	}
 	private Boolean verificarTrinca(PokerHand hand){
-		HashMap cartasRepetidas = sameNumber(hand)
-		if(cartasRepetidas.containsValue(3)){
-			println("Trinca")
-			Boolean.TRUE
-		}
-		else{Boolean.FALSE}
+		Trinca t = new Trinca()
+		t.isSequencia (hand)
 	}
 	private Boolean verificarDoisPares(PokerHand hand){
-		Boolean.FALSE
+		DoisPares dp = new DoisPares()
+		dp.isSequencia(hand)
 	}
 	private Boolean verificarPar(PokerHand hand){
-		HashMap cartasRepetidas = sameNumber(hand)
-		def result = cartasRepetidas.findAll {it.value == 2}
-		if(result.size() == 2){
-			println("Dois Pares")
-			Boolean.TRUE
-		}
-		else{Boolean.FALSE}
+		Par par = new Par()
+		par.isSequencia (hand)
 	}
 	private Boolean verificarMaiorCarta(PokerHand hand){
-		Boolean.FALSE
+		MaiorCarta mc = new MaiorCarta()
+		mc.verificaMaiorCarta(hand)
 	}
 
 	private Boolean desempateMaiorCarta(PokerHand hand1, PokerHand hand2){
