@@ -11,7 +11,7 @@ import static entidade.CardEnum.A
  */
 class StraightFlush implements Sequencia{
 	@Override
-	Result comparar(PokerHand hand1, PokerHand hand2) {
+	Result compararSequencias(PokerHand hand1, PokerHand hand2) {
 		Card.compare(PokerHand.retornaMaiorCarta(hand1), PokerHand.retornaMaiorCarta(hand2))
 	}
 

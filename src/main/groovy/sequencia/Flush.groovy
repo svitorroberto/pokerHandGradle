@@ -11,8 +11,10 @@ import static entidade.Card.sameSuit
  */
 class Flush implements Sequencia {
 	@Override
-	Result comparar(PokerHand hand1, PokerHand hand2) {
-		return null
+	Result compararSequencias(PokerHand hand1, PokerHand hand2) {
+		// carta mais alta
+		MaiorCarta maior = new MaiorCarta()
+		return maior.compararSequencias(hand1, hand2)
 	}
 
 	@Override

@@ -12,8 +12,8 @@ import static entidade.CardEnum.A
  */
 class RoyalStraightFlush implements Sequencia {
 	@Override
-	Result comparar(PokerHand hand1, PokerHand hand2) {
-		Result.DRAW
+	Result compararSequencias(PokerHand hand1, PokerHand hand2) {
+		Result.NONE
 	}
 
 	@Override

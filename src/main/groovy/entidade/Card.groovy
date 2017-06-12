@@ -13,6 +13,11 @@ class Card {
 		suit = carta[1]
 	}
 
+	Card(CardEnum number, SuitEnum suit){
+		this.number = number
+		this.suit = suit
+	}
+
 	static HashMap sameNumber(PokerHand hand){
 		Map<CardEnum, Integer> contagem = new HashMap<CardEnum, Integer>();
 		for(Card card : hand.cards){
@@ -38,8 +43,8 @@ class Card {
 	static Result compare(Card card1, Card card2){
 		def temp = card1.number.compareTo(card2.number)
 		if(temp<0){Result.LOSS}
-		if(temp==0){Result.DRAW}
-		if(temp>0){Result.WIN}
+		else if(temp==0){Result.DRAW}
+		else{Result.WIN}
 	}
 
 }

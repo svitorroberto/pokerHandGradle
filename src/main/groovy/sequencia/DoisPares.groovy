@@ -12,10 +12,12 @@ import static entidade.Card.sameNumber
 class DoisPares implements Sequencia {
 
 	@Override
-	Result comparar(PokerHand hand1, PokerHand hand2) {
+	Result compararSequencias(PokerHand hand1, PokerHand hand2) {
+		Par p = new Par()
 		HashMap cartasRepetidas1 = sameNumber(hand1)
 		HashMap cartasRepetidas2 = sameNumber(hand2)
 
+		Result resultDupla = p.compararSequencias(hand1, hand2)
 	}
 
 	@Override

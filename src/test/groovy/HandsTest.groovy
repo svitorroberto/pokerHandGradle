@@ -47,7 +47,6 @@ class HandsTest extends Specification{
 		"7C 8S 9H TH JH" | "TS TH TD JH JD" || Result.LOSS;
 		"7C 8S 9H TH JH" | "JH JD TH TC 4C" || Result.WIN;
 		"TS TH TD JH JD" | "JH JD TH TC 4C" || Result.WIN;
-
 	}
 
 }
