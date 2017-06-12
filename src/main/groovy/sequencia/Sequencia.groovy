@@ -10,6 +10,4 @@ interface Sequencia {
 
 	Result compararSequencias (PokerHand hand1, PokerHand hand2)
 	Boolean isSequencia (PokerHand hand1)
-//	Result desempatar (PokerHand hand1, PokerHand hand2)
-
 }

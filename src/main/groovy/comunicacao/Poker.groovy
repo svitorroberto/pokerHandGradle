@@ -15,7 +15,7 @@ class Poker {
 		return pn.verificarSequencias(hand1,hand2)
 	}
 /*
-	Result comparar2 (PokerHand hand1, PokerHand hand2){
+	Result comperar (PokerHand hand1, PokerHand hand2){
 		PokerNegocio pn = new PokerNegocio();
 		return pn.verificarSequenciasTop(hand1,hand2)
 	}
