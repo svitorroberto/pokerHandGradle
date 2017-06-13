@@ -14,9 +14,6 @@ class PokerHand {
 			this.cards.add(new Card(carta))
 		}
 	}
-	PokerHand(ArrayList<Card> cards) {
-			this.cards = cards
-	}
 
 	static Boolean isSequency(PokerHand hand){
 		def handOrdenada = hand.cards.number.sort()
@@ -26,8 +23,8 @@ class PokerHand {
 	}
 
 	static Card retornaMaiorCarta(PokerHand hand){
-		def handOrdenada = hand.cards.number.sort()
-		return hand.cards.find {it.number == handOrdenada.get(handOrdenada.size()-1)}
+		def handOrdenada = hand.cards.number.sort().reverse()
+		return hand.cards.find {it.number == handOrdenada.get(0)}
 	}
 
 	@Override
