@@ -4,6 +4,7 @@
 
 
 import comunicacao.Poker
+import comunicacao.Poquer
 import entidade.PokerHand
 import entidade.Result
 import spock.lang.*
@@ -13,7 +14,7 @@ class HandsTest extends Specification {
 	@Unroll
 	def "all pokerhands test"() {
 		setup:
-		def poker = new Poker()
+		def poker = new Poquer()
 
 		expect:
 		poker.comparar(new PokerHand(hand), new PokerHand(counterHand)) == result

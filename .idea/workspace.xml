@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4403cd5-81ef-4e97-b637-23a2344bec32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/ChecaSequencias.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/entidade/Card.class" afterPath="$PROJECT_DIR$/build/classes/main/entidade/Card.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/entidade/PokerHand.class" afterPath="$PROJECT_DIR$/build/classes/main/entidade/PokerHand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/negocio/PokerNegocio.class" afterPath="$PROJECT_DIR$/build/classes/main/negocio/PokerNegocio.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/DoisPares.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/DoisPares.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/Flush.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/Flush.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/FullHouse.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/FullHouse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/MaiorCarta.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/MaiorCarta.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/Par.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/Par.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/Quadra.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/Quadra.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/RoyalStraightFlush.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/RoyalStraightFlush.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/Sequency.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/Sequency.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/StraightFlush.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/StraightFlush.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/sequencia/Trinca.class" afterPath="$PROJECT_DIR$/build/classes/main/sequencia/Trinca.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/HandsTest.class" afterPath="$PROJECT_DIR$/build/classes/test/HandsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/comunicacao/Poquer.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/comunicacao/Poquer.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/groovy/entidade/PokerHand.groovy" afterPath="$PROJECT_DIR$/src/main/groovy/entidade/PokerHand.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/HandsTest.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/HandsTest.groovy" />
     </list>
@@ -36,23 +51,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Quadra.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/Quadra.groovy">
+      <file leaf-file-name="HandsTest.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/HandsTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PokerNegocio.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/negocio/PokerNegocio.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Poquer.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/comunicacao/Poquer.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
-                <element signature="e#19#39#0" expanded="true" />
+                <element signature="e#21#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HandsTest.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/HandsTest.groovy">
+      <file leaf-file-name="Poker.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+            <state relative-caret-position="210">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,7 +96,7 @@
       <file leaf-file-name="ChecaSequencias.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/ChecaSequencias.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="198">
               <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -81,32 +116,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sequency.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/Sequency.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flush.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/Flush.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PokerHand.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/groovy/entidade/PokerHand.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+            <state relative-caret-position="303">
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DoisPares.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/DoisPares.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="e#19#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,27 +162,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FullHouse.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/FullHouse.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding>
-                <element signature="e#19#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>)) ==</find>
+      <find>|</find>
+      <find>&amp;&amp;</find>
+      <find>if</find>
+      <find>&quot;) {</find>
+      <find>hand1</find>
+      <find>hand2</find>
     </findStrings>
     <replaceStrings>
       <replace>|</replace>
       <replace>||</replace>
+      <replace>&amp;&amp;</replace>
+      <replace>&amp;&amp; hand2 ==</replace>
+      <replace>else if</replace>
+      <replace>&quot;)) {</replace>
+      <replace>hand1.tuString()</replace>
+      <replace>hand2.toString()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -486,13 +513,14 @@
         <option value="$PROJECT_DIR$/src/main/groovy/sequencia/Flush.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/sequencia/Sequency.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/sequencia/DoisPares.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/sequencia/Sequencia.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/negocio/PokerNegocio.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/sequencia/Par.groovy" />
         <option value="$PROJECT_DIR$/src/main/groovy/sequencia/MaiorCarta.groovy" />
-        <option value="$PROJECT_DIR$/src/main/groovy/entidade/PokerHand.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/ChecaSequencias.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/entidade/PokerHand.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/comunicacao/Poquer.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/HandsTest.groovy" />
       </list>
     </option>
@@ -641,6 +669,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="entidade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pokerHand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pokerHandGradle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="groovy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comunicacao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1165,44 +1219,44 @@
       <updated>1496921719609</updated>
       <workItem from="1496921720884" duration="44598000" />
       <workItem from="1497265353681" duration="24223000" />
-      <workItem from="1497350681807" duration="4676000" />
+      <workItem from="1497350681807" duration="8145000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChecaSequencias - 2017.06.13 at 08h 52m 02s.xml">
-      <configuration name="ChecaSequencias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChecaSequencias - 2017.06.13 at 08h 58m 47s.xml">
-      <configuration name="ChecaSequencias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChecaSequencias - 2017.06.13 at 09h 11m 12s.xml">
-      <configuration name="ChecaSequencias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChecaSequencias - 2017.06.13 at 09h 14m 05s.xml">
-      <configuration name="ChecaSequencias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChecaSequencias - 2017.06.13 at 09h 23m 37s.xml">
-      <configuration name="ChecaSequencias" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HandsTest - 2017.06.13 at 08h 43m 47s.xml">
+    <history-entry file="HandsTest - 2017.06.13 at 10h 16m 08s.xml">
       <configuration name="HandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandsTest - 2017.06.13 at 08h 44m 03s.xml">
+    <history-entry file="HandsTest - 2017.06.13 at 10h 16m 58s.xml">
       <configuration name="HandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandsTest - 2017.06.13 at 09h 18m 49s.xml">
+    <history-entry file="HandsTest - 2017.06.13 at 10h 18m 54s.xml">
       <configuration name="HandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandsTest - 2017.06.13 at 09h 20m 56s.xml">
+    <history-entry file="HandsTest - 2017.06.13 at 10h 19m 16s.xml">
       <configuration name="HandsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandsTest - 2017.06.13 at 09h 27m 12s.xml">
+    <history-entry file="HandsTest - 2017.06.13 at 10h 19m 22s.xml">
+      <configuration name="HandsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandsTest - 2017.06.13 at 10h 20m 34s.xml">
+      <configuration name="HandsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandsTest - 2017.06.13 at 10h 20m 57s.xml">
+      <configuration name="HandsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandsTest - 2017.06.13 at 10h 23m 59s.xml">
+      <configuration name="HandsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandsTest - 2017.06.13 at 10h 24m 23s.xml">
+      <configuration name="HandsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HandsTest - 2017.06.13 at 10h 24m 47s.xml">
       <configuration name="HandsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73497000" />
+    <option name="totallyTimeSpent" value="76966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -1226,7 +1280,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2905983" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2905983" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2512424" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1251,7 +1305,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="139" />
+      <option name="time" value="148" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1459,6 +1513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="3056" column="24" lean-forward="false" selection-start-line="3056" selection-start-column="24" selection-end-line="3056" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1530,14 +1585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="53" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/StraightFlush.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1570,16 +1617,6 @@
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#19#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/DoisPares.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1630,22 +1667,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/negocio/PokerNegocio.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <element signature="e#17#37#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/MaiorCarta.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="e#19#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/negocio/PokerNegocio.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/sequencia/DoisPares.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#19#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/comunicacao/Poker.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/ChecaSequencias.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#294#341#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1660,28 +1724,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/groovy/entidade/PokerHand.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+        <state relative-caret-position="303">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/ChecaSequencias.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#294#341#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/groovy/HandsTest.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        <state relative-caret-position="150">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/comunicacao/Poquer.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#21#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

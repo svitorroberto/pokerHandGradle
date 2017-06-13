@@ -29,9 +29,9 @@ class PokerHand {
 
 	@Override
 	String toString() {
-		String hand = ""
-			this.cards.each { hand += "["+it.number+" "+it.suit+"] "}
-		return hand
+		String hand = ''
+			this.cards.each { hand += ''+it.number.codigo+''+it.suit+' '}
+		return hand.trim()
 
 	}
 }
