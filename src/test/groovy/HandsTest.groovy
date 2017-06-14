@@ -14,7 +14,7 @@ class HandsTest extends Specification {
 	@Unroll
 	def "all pokerhands test"() {
 		setup:
-		def poker = new Poquer()
+		def poker = new Poker()
 
 		expect:
 		poker.comparar(new PokerHand(hand), new PokerHand(counterHand)) == result
